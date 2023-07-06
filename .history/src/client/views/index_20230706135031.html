@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Trip</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="holder headline">
+      Travel Trip App
+    </div>
+    <main class="main">
+
+      <!-- Section About -->
+  
+      <section id="about" class="section section__about">
+        <div class="map__wrapper">
+          <div class="about__map">
+            <h1 class="map__heading">Time to Travel</h1>
+            <h3 class="map__title">Your ultimate travel planner</h3>
+            <p class="map__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ad quod consequatur
+              dignissimos quisquam, in doloribus accusantium reiciendis voluptatum alias rem incidunt! Porro ad aperiam,
+              iste distinctio repellat debitis alias.</p>
+            <a href="#" class="map__link">+ add your trip</a>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Section Planner -->
+  
+      <section id="planner" class="section section__planner">
+        <div class="container planner__form">
+          <div class="form__image section__image">
+            <img src="./img/planet-earth.png" alt="planet Earth icon">
+          </div>
+          <form class="form__content" id="form">
+            <h2 class="form__heading">Plan your trip</h2>
+            <input type="text" class="form__input input__from" name="from" placeholder="leaving from..."
+              autocomplete="off" required>
+            <input type="text" class="form__input input__to" name="to" placeholder="going to..." autocomplete="off"
+              required>
+            <label class="date__label" for="date">departing on...</label>
+            <input type="date" class="form__input input__date" name="date" required>
+            <input type="submit" class="input__submit" name="submit" value="Submit">
+          </form>
+        </div>
+      </section>
+  
+      <!-- Section Result -->
+  
+      <section id="result" class="section section__result invisible">
+        <div class="container results">
+          <div class="result__image">
+            <img src="./img/planet-earth.png" alt="destination image" id="fromPixabay">
+          </div>
+          <div class="result__content">
+  
+            <i class="city__icon icon__result fas fa-map-pin"></i>
+            <h2 class="city__name text__result">You are going to: <span id="city"></span></h2>
+            <i class="date__icon icon__result fas fa-calendar-day"></i>
+            <h2 class="date__name text__result">Departing on: <span id="date">DD/MM/YYYY</span></h2>
+  
+            <i class="days__icon icon__result fas fa-suitcase-rolling"></i>
+            <h2 class="days__name text__result">This is <span id="days"> NUM </span> days away</h2>
+  
+            <i class="weather__icon icon__result fas fa-cloud-sun-rain"></i>
+            <h2 class="weather__name text__result">Expect weather to be: <span id="temp">200C</span> &#176; F, <span
+                id="summary"></span>.</h2>
+  
+            <a class="button button__save" id="save" href="#">Print</a>
+            <a class="button button__delete" id="delete" href="#">Delete</a>
+  
+          </div>
+        </div>
+      </section>
+    </main>
+
+        
+    <!-- <div class="holder zip">
+      <label for="zip">Enter Zipcode here</label>
+      <input type="text" id="zip" placeholder="enter zip code here">
+    </div>
+    <div class="holder feel">
+      <label for="feelings">How are you feeling today?</label>
+      <textarea class="myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
+      <button id="generate" type="submit"> Generate </button>
+    </div>
+    <div class="holder entry">
+      <div class="title">Most Recent Entry</div>
+      <div id="entryHolder">
+        <div id="date"></div>
+        <div id="temp"></div>
+        <div id="content"></div>
+      </div>
+    </div> -->
+  </div>
+  <script src="app.js" type="text/javascript"></script>
+
+</body>
+
+</html>
